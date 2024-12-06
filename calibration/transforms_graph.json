@@ -1,0 +1,2106 @@
+{
+  "directed": true,
+  "graph": {},
+  "links": [
+    {
+      "child": "collision_head_link_1",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "collision_head_1",
+      "joint_params_calibrated": null,
+      "parent": "base",
+      "source": "base",
+      "target": "collision_head_link_1",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "collision_head_link_2",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "collision_head_2",
+      "joint_params_calibrated": null,
+      "parent": "base",
+      "source": "base",
+      "target": "collision_head_link_2",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "torso",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "torso_t0",
+      "joint_params_calibrated": null,
+      "parent": "base",
+      "source": "base",
+      "target": "torso",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "pattern_link",
+      "from_bag": false,
+      "is_transformation_calibrated": true,
+      "joint_name": null,
+      "joint_params_calibrated": null,
+      "parent": "base",
+      "source": "base",
+      "target": "pattern_link",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "realsense_base_color_optical_frame",
+      "from_bag": true,
+      "is_transformation_calibrated": true,
+      "parent": "base",
+      "source": "base",
+      "target": "realsense_base_color_optical_frame",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_torso_itb",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_torso_itb_fixed",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "left_torso_itb",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_torso_itb",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_torso_itb_fixed",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "right_torso_itb",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "head",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "head_pan",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "head",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "sonar_ring",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "sonar_s0",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "sonar_ring",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_arm_mount",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_torso_arm_mount",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "right_arm_mount",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_arm_mount",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_torso_arm_mount",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "left_arm_mount",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "pedestal",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "pedestal_fixed",
+      "joint_params_calibrated": null,
+      "parent": "torso",
+      "source": "torso",
+      "target": "pedestal",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "dummyhead1",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "dummy",
+      "joint_params_calibrated": null,
+      "parent": "head",
+      "source": "head",
+      "target": "dummyhead1",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "screen",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "head_nod",
+      "joint_params_calibrated": null,
+      "parent": "head",
+      "source": "head",
+      "target": "screen",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "head_camera",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "head_camera",
+      "joint_params_calibrated": null,
+      "parent": "head",
+      "source": "head",
+      "target": "head_camera",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "display",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "display_joint",
+      "joint_params_calibrated": null,
+      "parent": "screen",
+      "source": "screen",
+      "target": "display",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_upper_shoulder",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_s0",
+      "joint_params_calibrated": null,
+      "parent": "right_arm_mount",
+      "source": "right_arm_mount",
+      "target": "right_upper_shoulder",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_lower_shoulder",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_s1",
+      "joint_params_calibrated": null,
+      "parent": "right_upper_shoulder",
+      "source": "right_upper_shoulder",
+      "target": "right_lower_shoulder",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_upper_elbow",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_e0",
+      "joint_params_calibrated": null,
+      "parent": "right_lower_shoulder",
+      "source": "right_lower_shoulder",
+      "target": "right_upper_elbow",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_upper_elbow_visual",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_e0_fixed",
+      "joint_params_calibrated": null,
+      "parent": "right_lower_shoulder",
+      "source": "right_lower_shoulder",
+      "target": "right_upper_elbow_visual",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_lower_elbow",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_e1",
+      "joint_params_calibrated": null,
+      "parent": "right_upper_elbow",
+      "source": "right_upper_elbow",
+      "target": "right_lower_elbow",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_upper_forearm",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_w0",
+      "joint_params_calibrated": null,
+      "parent": "right_lower_elbow",
+      "source": "right_lower_elbow",
+      "target": "right_upper_forearm",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_upper_forearm_visual",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_w0_fixed",
+      "joint_params_calibrated": null,
+      "parent": "right_lower_elbow",
+      "source": "right_lower_elbow",
+      "target": "right_upper_forearm_visual",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_arm_itb",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_w0_to_itb_fixed",
+      "joint_params_calibrated": null,
+      "parent": "right_upper_forearm",
+      "source": "right_upper_forearm",
+      "target": "right_arm_itb",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_lower_forearm",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_w1",
+      "joint_params_calibrated": null,
+      "parent": "right_upper_forearm",
+      "source": "right_upper_forearm",
+      "target": "right_lower_forearm",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_wrist",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_w2",
+      "joint_params_calibrated": null,
+      "parent": "right_lower_forearm",
+      "source": "right_lower_forearm",
+      "target": "right_wrist",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "right_hand",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_hand",
+      "joint_params_calibrated": null,
+      "parent": "right_wrist",
+      "source": "right_wrist",
+      "target": "right_hand",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_hand_camera",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_hand_camera",
+      "joint_params_calibrated": null,
+      "parent": "right_hand",
+      "source": "right_hand",
+      "target": "right_hand_camera",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_hand_camera_axis",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_hand_camera_axis",
+      "joint_params_calibrated": null,
+      "parent": "right_hand",
+      "source": "right_hand",
+      "target": "right_hand_camera_axis",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_hand_range",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_hand_range",
+      "joint_params_calibrated": null,
+      "parent": "right_hand",
+      "source": "right_hand",
+      "target": "right_hand_range",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_hand_accelerometer",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_hand_accelerometer",
+      "joint_params_calibrated": null,
+      "parent": "right_hand",
+      "source": "right_hand",
+      "target": "right_hand_accelerometer",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_gripper_base",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_gripper_base",
+      "joint_params_calibrated": null,
+      "parent": "right_hand",
+      "source": "right_hand",
+      "target": "right_gripper_base",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_upper_shoulder",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_s0",
+      "joint_params_calibrated": null,
+      "parent": "left_arm_mount",
+      "source": "left_arm_mount",
+      "target": "left_upper_shoulder",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_lower_shoulder",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_s1",
+      "joint_params_calibrated": null,
+      "parent": "left_upper_shoulder",
+      "source": "left_upper_shoulder",
+      "target": "left_lower_shoulder",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_upper_elbow",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_e0",
+      "joint_params_calibrated": null,
+      "parent": "left_lower_shoulder",
+      "source": "left_lower_shoulder",
+      "target": "left_upper_elbow",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_upper_elbow_visual",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_e0_fixed",
+      "joint_params_calibrated": null,
+      "parent": "left_lower_shoulder",
+      "source": "left_lower_shoulder",
+      "target": "left_upper_elbow_visual",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_lower_elbow",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_e1",
+      "joint_params_calibrated": null,
+      "parent": "left_upper_elbow",
+      "source": "left_upper_elbow",
+      "target": "left_lower_elbow",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_upper_forearm",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_w0",
+      "joint_params_calibrated": null,
+      "parent": "left_lower_elbow",
+      "source": "left_lower_elbow",
+      "target": "left_upper_forearm",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_upper_forearm_visual",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_w0_fixed",
+      "joint_params_calibrated": null,
+      "parent": "left_lower_elbow",
+      "source": "left_lower_elbow",
+      "target": "left_upper_forearm_visual",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_arm_itb",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_w0_to_itb_fixed",
+      "joint_params_calibrated": null,
+      "parent": "left_upper_forearm",
+      "source": "left_upper_forearm",
+      "target": "left_arm_itb",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_lower_forearm",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_w1",
+      "joint_params_calibrated": null,
+      "parent": "left_upper_forearm",
+      "source": "left_upper_forearm",
+      "target": "left_lower_forearm",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_wrist",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_w2",
+      "joint_params_calibrated": null,
+      "parent": "left_lower_forearm",
+      "source": "left_lower_forearm",
+      "target": "left_wrist",
+      "type": "revolute",
+      "weight": 1
+    },
+    {
+      "child": "left_hand",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_hand",
+      "joint_params_calibrated": null,
+      "parent": "left_wrist",
+      "source": "left_wrist",
+      "target": "left_hand",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_hand_camera",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_hand_camera",
+      "joint_params_calibrated": null,
+      "parent": "left_hand",
+      "source": "left_hand",
+      "target": "left_hand_camera",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_hand_camera_axis",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_hand_camera_axis",
+      "joint_params_calibrated": null,
+      "parent": "left_hand",
+      "source": "left_hand",
+      "target": "left_hand_camera_axis",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_hand_range",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_hand_range",
+      "joint_params_calibrated": null,
+      "parent": "left_hand",
+      "source": "left_hand",
+      "target": "left_hand_range",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_hand_accelerometer",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_hand_accelerometer",
+      "joint_params_calibrated": null,
+      "parent": "left_hand",
+      "source": "left_hand",
+      "target": "left_hand_accelerometer",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_gripper_base",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_gripper_base",
+      "joint_params_calibrated": null,
+      "parent": "left_hand",
+      "source": "left_hand",
+      "target": "left_gripper_base",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "left_gripper",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "left_endpoint",
+      "joint_params_calibrated": null,
+      "parent": "left_gripper_base",
+      "source": "left_gripper_base",
+      "target": "left_gripper",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "l_gripper_l_finger",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "l_gripper_l_finger_joint",
+      "joint_params_calibrated": null,
+      "parent": "left_gripper_base",
+      "source": "left_gripper_base",
+      "target": "l_gripper_l_finger",
+      "type": "prismatic",
+      "weight": 1
+    },
+    {
+      "child": "l_gripper_r_finger",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "l_gripper_r_finger_joint",
+      "joint_params_calibrated": null,
+      "parent": "left_gripper_base",
+      "source": "left_gripper_base",
+      "target": "l_gripper_r_finger",
+      "type": "prismatic",
+      "weight": 1
+    },
+    {
+      "child": "l_gripper_l_finger_tip",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "l_gripper_l_finger_tip_joint",
+      "joint_params_calibrated": null,
+      "parent": "l_gripper_l_finger",
+      "source": "l_gripper_l_finger",
+      "target": "l_gripper_l_finger_tip",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "l_gripper_r_finger_tip",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "l_gripper_r_finger_tip_joint",
+      "joint_params_calibrated": null,
+      "parent": "l_gripper_r_finger",
+      "source": "l_gripper_r_finger",
+      "target": "l_gripper_r_finger_tip",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "right_gripper",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "right_endpoint",
+      "joint_params_calibrated": null,
+      "parent": "right_gripper_base",
+      "source": "right_gripper_base",
+      "target": "right_gripper",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "r_gripper_l_finger",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "r_gripper_l_finger_joint",
+      "joint_params_calibrated": null,
+      "parent": "right_gripper_base",
+      "source": "right_gripper_base",
+      "target": "r_gripper_l_finger",
+      "type": "prismatic",
+      "weight": 1
+    },
+    {
+      "child": "r_gripper_r_finger",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "r_gripper_r_finger_joint",
+      "joint_params_calibrated": null,
+      "parent": "right_gripper_base",
+      "source": "right_gripper_base",
+      "target": "r_gripper_r_finger",
+      "type": "prismatic",
+      "weight": 1
+    },
+    {
+      "child": "r_gripper_l_finger_tip",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "r_gripper_l_finger_tip_joint",
+      "joint_params_calibrated": null,
+      "parent": "r_gripper_l_finger",
+      "source": "r_gripper_l_finger",
+      "target": "r_gripper_l_finger_tip",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "r_gripper_r_finger_tip",
+      "from_bag": false,
+      "is_transformation_calibrated": false,
+      "joint_name": "r_gripper_r_finger_tip_joint",
+      "joint_params_calibrated": null,
+      "parent": "r_gripper_r_finger",
+      "source": "r_gripper_r_finger",
+      "target": "r_gripper_r_finger_tip",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "referencehead",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referencehead",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_arm_mount",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referenceleft_arm_mount",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_torso_itb",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referenceleft_torso_itb",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencepedestal",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referencepedestal",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_arm_mount",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referenceright_arm_mount",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_torso_itb",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referenceright_torso_itb",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencesonar_ring",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencetorso",
+      "source": "referencetorso",
+      "target": "referencesonar_ring",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencedummyhead1",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencehead",
+      "source": "referencehead",
+      "target": "referencedummyhead1",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencehead_camera",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencehead",
+      "source": "referencehead",
+      "target": "referencehead_camera",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencescreen",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencehead",
+      "source": "referencehead",
+      "target": "referencescreen",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_upper_elbow",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_lower_shoulder",
+      "source": "referenceleft_lower_shoulder",
+      "target": "referenceleft_upper_elbow",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_upper_elbow_visual",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_lower_shoulder",
+      "source": "referenceleft_lower_shoulder",
+      "target": "referenceleft_upper_elbow_visual",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_lower_elbow",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_upper_elbow",
+      "source": "referenceleft_upper_elbow",
+      "target": "referenceleft_lower_elbow",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_upper_forearm",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_lower_elbow",
+      "source": "referenceleft_lower_elbow",
+      "target": "referenceleft_upper_forearm",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_upper_forearm_visual",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_lower_elbow",
+      "source": "referenceleft_lower_elbow",
+      "target": "referenceleft_upper_forearm_visual",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_upper_shoulder",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_arm_mount",
+      "source": "referenceleft_arm_mount",
+      "target": "referenceleft_upper_shoulder",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_lower_shoulder",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_upper_shoulder",
+      "source": "referenceleft_upper_shoulder",
+      "target": "referenceleft_lower_shoulder",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_lower_forearm",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_upper_forearm",
+      "source": "referenceleft_upper_forearm",
+      "target": "referenceleft_lower_forearm",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_arm_itb",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_upper_forearm",
+      "source": "referenceleft_upper_forearm",
+      "target": "referenceleft_arm_itb",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_wrist",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_lower_forearm",
+      "source": "referenceleft_lower_forearm",
+      "target": "referenceleft_wrist",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_hand",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_wrist",
+      "source": "referenceleft_wrist",
+      "target": "referenceleft_hand",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_upper_elbow",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_lower_shoulder",
+      "source": "referenceright_lower_shoulder",
+      "target": "referenceright_upper_elbow",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_upper_elbow_visual",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_lower_shoulder",
+      "source": "referenceright_lower_shoulder",
+      "target": "referenceright_upper_elbow_visual",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_lower_elbow",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_upper_elbow",
+      "source": "referenceright_upper_elbow",
+      "target": "referenceright_lower_elbow",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_upper_forearm",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_lower_elbow",
+      "source": "referenceright_lower_elbow",
+      "target": "referenceright_upper_forearm",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_upper_forearm_visual",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_lower_elbow",
+      "source": "referenceright_lower_elbow",
+      "target": "referenceright_upper_forearm_visual",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_upper_shoulder",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_arm_mount",
+      "source": "referenceright_arm_mount",
+      "target": "referenceright_upper_shoulder",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_lower_shoulder",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_upper_shoulder",
+      "source": "referenceright_upper_shoulder",
+      "target": "referenceright_lower_shoulder",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_lower_forearm",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_upper_forearm",
+      "source": "referenceright_upper_forearm",
+      "target": "referenceright_lower_forearm",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_arm_itb",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_upper_forearm",
+      "source": "referenceright_upper_forearm",
+      "target": "referenceright_arm_itb",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_wrist",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_lower_forearm",
+      "source": "referenceright_lower_forearm",
+      "target": "referenceright_wrist",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_hand",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_wrist",
+      "source": "referenceright_wrist",
+      "target": "referenceright_hand",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencecollision_head_link_1",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencebase",
+      "source": "referencebase",
+      "target": "referencecollision_head_link_1",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencecollision_head_link_2",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencebase",
+      "source": "referencebase",
+      "target": "referencecollision_head_link_2",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencetorso",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencebase",
+      "source": "referencebase",
+      "target": "referencetorso",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencedisplay",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencescreen",
+      "source": "referencescreen",
+      "target": "referencedisplay",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencel_gripper_l_finger_tip",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencel_gripper_l_finger",
+      "source": "referencel_gripper_l_finger",
+      "target": "referencel_gripper_l_finger_tip",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencel_gripper_r_finger_tip",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencel_gripper_r_finger",
+      "source": "referencel_gripper_r_finger",
+      "target": "referencel_gripper_r_finger_tip",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_gripper",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_gripper_base",
+      "source": "referenceleft_gripper_base",
+      "target": "referenceleft_gripper",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencel_gripper_l_finger",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_gripper_base",
+      "source": "referenceleft_gripper_base",
+      "target": "referencel_gripper_l_finger",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencel_gripper_r_finger",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_gripper_base",
+      "source": "referenceleft_gripper_base",
+      "target": "referencel_gripper_r_finger",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_gripper_base",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_hand",
+      "source": "referenceleft_hand",
+      "target": "referenceleft_gripper_base",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_gripper_mass",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_hand",
+      "source": "referenceleft_hand",
+      "target": "referenceleft_gripper_mass",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_hand_accelerometer",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_hand",
+      "source": "referenceleft_hand",
+      "target": "referenceleft_hand_accelerometer",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_hand_camera",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_hand",
+      "source": "referenceleft_hand",
+      "target": "referenceleft_hand_camera",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_hand_camera_axis",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_hand",
+      "source": "referenceleft_hand",
+      "target": "referenceleft_hand_camera_axis",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_hand_range",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_hand",
+      "source": "referenceleft_hand",
+      "target": "referenceleft_hand_range",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceleft_gripper_object_mass",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceleft_gripper_mass",
+      "source": "referenceleft_gripper_mass",
+      "target": "referenceleft_gripper_object_mass",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencer_gripper_l_finger_tip",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencer_gripper_l_finger",
+      "source": "referencer_gripper_l_finger",
+      "target": "referencer_gripper_l_finger_tip",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencer_gripper_r_finger_tip",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referencer_gripper_r_finger",
+      "source": "referencer_gripper_r_finger",
+      "target": "referencer_gripper_r_finger_tip",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_gripper",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_gripper_base",
+      "source": "referenceright_gripper_base",
+      "target": "referenceright_gripper",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencer_gripper_l_finger",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_gripper_base",
+      "source": "referenceright_gripper_base",
+      "target": "referencer_gripper_l_finger",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencer_gripper_r_finger",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_gripper_base",
+      "source": "referenceright_gripper_base",
+      "target": "referencer_gripper_r_finger",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_gripper_base",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_hand",
+      "source": "referenceright_hand",
+      "target": "referenceright_gripper_base",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_gripper_mass",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_hand",
+      "source": "referenceright_hand",
+      "target": "referenceright_gripper_mass",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_hand_accelerometer",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_hand",
+      "source": "referenceright_hand",
+      "target": "referenceright_hand_accelerometer",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_hand_camera",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_hand",
+      "source": "referenceright_hand",
+      "target": "referenceright_hand_camera",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_hand_camera_axis",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_hand",
+      "source": "referenceright_hand",
+      "target": "referenceright_hand_camera_axis",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_hand_range",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_hand",
+      "source": "referenceright_hand",
+      "target": "referenceright_hand_range",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referenceright_gripper_object_mass",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "referenceright_gripper_mass",
+      "source": "referenceright_gripper_mass",
+      "target": "referenceright_gripper_object_mass",
+      "type": "multiple",
+      "weight": 1
+    },
+    {
+      "child": "referencebase",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "world",
+      "source": "world",
+      "target": "referencebase",
+      "type": "fixed",
+      "weight": 1
+    },
+    {
+      "child": "base",
+      "from_bag": true,
+      "is_transformation_calibrated": false,
+      "parent": "world",
+      "source": "world",
+      "target": "base",
+      "type": "fixed",
+      "weight": 1
+    }
+  ],
+  "multigraph": false,
+  "nodes": [
+    {
+      "from_bag": false,
+      "id": "base",
+      "is_world": true,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "torso",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_torso_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_torso_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "head",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "sonar_ring",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "screen",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "display",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "head_camera",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "dummyhead1",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "collision_head_link_1",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "collision_head_link_2",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_arm_mount",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_upper_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_lower_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_upper_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_upper_elbow_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_lower_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_upper_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_upper_forearm_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_arm_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_lower_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_wrist",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_hand",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_hand_camera",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_hand_camera_axis",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_hand_range",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_hand_accelerometer",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_arm_mount",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_upper_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_lower_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_upper_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_upper_elbow_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_lower_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_upper_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_upper_forearm_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_arm_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_lower_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_wrist",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_hand",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_hand_camera",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_hand_camera_axis",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_hand_range",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_hand_accelerometer",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "pedestal",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_gripper_base",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "l_gripper_l_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "l_gripper_l_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "l_gripper_r_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "l_gripper_r_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "left_gripper",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_gripper_base",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "r_gripper_l_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "r_gripper_l_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "r_gripper_r_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "r_gripper_r_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "from_bag": false,
+      "id": "right_gripper",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "pattern_link",
+      "is_world": false,
+      "pattern": "pattern_1",
+      "sensor_data": null
+    },
+    {
+      "id": "referencetorso",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencehead",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_lower_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_upper_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_lower_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_arm_mount",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_upper_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_upper_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_lower_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_wrist",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_lower_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_upper_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_lower_elbow",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_arm_mount",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_upper_shoulder",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_upper_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_lower_forearm",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_wrist",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencebase",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencecollision_head_link_1",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencecollision_head_link_2",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencescreen",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencedisplay",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencedummyhead1",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencehead_camera",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencel_gripper_l_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencel_gripper_l_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencel_gripper_r_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencel_gripper_r_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_upper_elbow_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_gripper_base",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_gripper",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_hand",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_gripper_mass",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_gripper_object_mass",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_hand_accelerometer",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_hand_camera",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_hand_camera_axis",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_hand_range",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_torso_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_upper_forearm_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceleft_arm_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencepedestal",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencer_gripper_l_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencer_gripper_l_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencer_gripper_r_finger",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencer_gripper_r_finger_tip",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_upper_elbow_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_gripper_base",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_gripper",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_hand",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_gripper_mass",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_gripper_object_mass",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_hand_accelerometer",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_hand_camera",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_hand_camera_axis",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_hand_range",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_torso_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_upper_forearm_visual",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referenceright_arm_itb",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "referencesonar_ring",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    },
+    {
+      "id": "realsense_base_color_optical_frame",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": "realsense_base"
+    },
+    {
+      "id": "world",
+      "is_world": false,
+      "pattern": null,
+      "sensor_data": null
+    }
+  ]
+}
